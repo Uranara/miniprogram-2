@@ -1,0 +1,144 @@
+.page-container {
+  background-color: #f5f6f8;
+  background: linear-gradient(to bottom, #9aa8c9, #dce6ff);
+
+  min-height: 100vh;
+}
+/* ================== 1. 顶部背景与 Header ================== */
+.header-bg {
+  width: 100%;
+  height: 400rpx;
+  box-sizing: border-box;
+  padding-top: 30rpx;
+
+}
+.header-content{
+  padding: 0 30rpx;
+ 
+}
+
+.logo-area{
+  display:flex;
+  align-items: center;
+  margin-bottom: 30rpx;
+}
+
+.logo-icon{
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin-right: 16rpx;
+}
+
+.logo-text{
+  font-size: 46rpx;
+  font-weight: bold;
+  color: #000000;
+  font-style: italic;
+}
+
+
+
+.search-bar {
+  width: 100%;
+  height: 72rpx;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 36rpx;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+}
+
+.search-icon{
+ flex-shrink: 0;
+  margin-right: 16rpx;
+}
+
+.search-input{
+  flex: 1;
+  height: 100%;
+  font-size: 28rpx;
+  color: #333;
+}
+/* ================== 2. Banner 轮播图 ================== */
+.banner-card {
+  margin: -80rpx 30rpx 30rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.1);
+}
+.banner-image{
+  width: 100%;
+  height: 100%;
+}
+/* ================== 3. 四宫格卡片 ================== */
+.grid-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 30rpx;
+    margin-bottom: 30rpx;
+
+}
+
+.grid-card{
+  width: 48%;
+  height: 160rpx;
+  border-radius: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin-bottom: 24rpx;
+  color: #000000;
+  padding:0 15rpx;
+
+}
+
+.card-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-info .title{
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-bottom: 8rpx;
+}
+
+.card-info .desc{
+  font-size: 26rpx;
+  opacity: 0.9;
+}
+
+.card-icon {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  width: 60rpx;
+  height: 60rpx;
+  flex-shrink: 0;
+
+}
+
+.icon-img {
+  width: 100%;
+  height: 100%;
+}
+/* 各种颜色卡片背景（使用渐变色更美观，可根据需要修改） */
+.card-green {
+  background: linear-gradient(135deg, #4caf50, #81c784);
+}
+.card-blue {
+  background: linear-gradient(135deg, #2196f3, #64b5f6);
+}
+.card-orange {
+  background: linear-gradient(135deg, #ff9800, #ffb74d);
+}
+.card-purple {
+  background: linear-gradient(135deg, #9c27b0, #ba68c8);
+}

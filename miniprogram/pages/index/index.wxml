@@ -1,0 +1,91 @@
+<view class="page-container">
+  <!-- 1. 顶部渐变背景 + Header -->
+  <view class="header-bg">
+    <view class="header-content">
+      <!-- 1.1 Logo 区域 -->
+      <view class="logo-area">
+        <view class="logo-icon">
+          <image src="/images/logo/logo.png" style="width:208rpx;height:208rpx" />
+        </view>
+        <text class="logo-text">
+          翼客行
+        </text>
+      </view>
+      <!-- 1.2 搜索框区域 -->
+      <view class="search-bar" bindtap="goToSearch">
+        <icon type="search" size="28" class="search-icon" color="#999999"></icon>
+        <input class="search-input" placeholder="请输入搜索内容"  />
+      </view>
+
+    </view>
+  </view>
+  <!-- 2. Banner 轮播图 -->
+  <view class="banner-card">
+    <swiper class="banner-swiper" indicator-dots="true" indicator-color="rgba(255,255,255,0.5)" indicator-active-color="#cccccc" autoplay="true" interval="3000" circular="true">
+      <swiper-item>
+        <image class="banner-image" src="/images/banner/platform.png" mode="aspectFill" />
+      </swiper-item>
+
+      <swiper-item>
+        <image class="banner-image" src="/images/banner/ad.png" mode="aspectFill" />
+      </swiper-item>
+
+      <swiper-item>
+        <image class="banner-image" src="/images/banner/service.png" mode="aspectFill" />
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 3. 四宫格卡片 -->
+  <view class="grid-container">
+    <view class="grid-card card-green">
+      <view class="card-info">
+        <view class="title">案例学习</view>
+        <view class="desc">操作流程接单</view>
+      </view>
+      <view class="card-icon">
+      <image class="icon-img" src="/images/pack/pencli.png"  mode="aspectFit" />
+      </view>
+    </view>
+    <view class="grid-card card-blue">
+      <view class="card-info">
+        <view class="title">租赁二手</view>
+        <view class="desc">双方协商</view>
+      </view>
+      <view class="card-icon">
+        <image class="icon-img" src="/images/pack/shopping.png"  mode="aspectFit" />
+      </view>
+    </view>
+    <view class="grid-card card-orange">
+      <view class="card-info">
+        <view class="title">CAAC认证</view>
+        <view class="desc">官方认证</view>
+      </view>
+      <view class="card-icon">
+        <image class="icon-img" src="/images/pack/up.png"  mode="aspectFit" />
+      </view>
+    </view>
+    <view class="grid-card card-purple">
+      <view class="card-info">
+        <view class="title">飞手服务</view>
+        <view class="desc">教学培训招生</view>
+      </view>
+      <view class="card-icon">
+        <image class="icon-img" src="/images/pack/crown.png"  mode="aspectFit" />
+      </view>
+    </view>
+  </view>
+
+  <!-- 4. 接单 Tab 切换区 -->
+  <view class="tab-section">
+    <view class="tar-bar">
+      <view class="tab active">接单列表</view>
+      <view class="tab">招聘职位</view>
+      <view class="tab">查询飞手</view>
+    </view>
+  </view>
+
+  <!-- 占位，防止内容被底部 TabBar 挡住 -->
+  <view style="height: 150rpx;">
+  </view>
+
+</view>
