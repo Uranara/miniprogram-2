@@ -4,6 +4,7 @@
 
   min-height: 100vh;
 }
+
 /* ================== 1. 顶部背景与 Header ================== */
 .header-bg {
   width: 100%;
@@ -12,25 +13,26 @@
   padding-top: 30rpx;
 
 }
-.header-content{
+
+.header-content {
   padding: 0 30rpx;
- 
+
 }
 
-.logo-area{
-  display:flex;
+.logo-area {
+  display: flex;
   align-items: center;
   margin-bottom: 30rpx;
 }
 
-.logo-icon{
+.logo-icon {
   display: flex;
   align-self: center;
   justify-content: center;
   margin-right: 16rpx;
 }
 
-.logo-text{
+.logo-text {
   font-size: 46rpx;
   font-weight: bold;
   color: #000000;
@@ -50,41 +52,44 @@
   padding: 0 20rpx;
 }
 
-.search-icon{
- flex-shrink: 0;
+.search-icon {
+  flex-shrink: 0;
   margin-right: 16rpx;
 }
 
-.search-input{
+.search-input {
   flex: 1;
   height: 100%;
   font-size: 28rpx;
   color: #333;
 }
+
 /* ================== 2. Banner 轮播图 ================== */
 .banner-card {
-  margin: 5rpx  30rpx 30rpx;
+  margin: 5rpx 30rpx 30rpx;
   border-radius: 20rpx;
   overflow: hidden;
   position: relative;
   z-index: 10;
   box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.1);
 }
-.banner-image{
+
+.banner-image {
   width: 100%;
   height: 100%;
 }
+
 /* ================== 3. 四宫格卡片 ================== */
-.grid-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0 30rpx;
-    margin-bottom: 30rpx;
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 30rpx;
+  margin-bottom: 30rpx;
 
 }
 
-.grid-card{
+.grid-card {
   width: 48%;
   height: 160rpx;
   border-radius: 20rpx;
@@ -94,23 +99,23 @@
   box-sizing: border-box;
   margin-bottom: 24rpx;
   color: #000000;
-  padding:0 15rpx;
+  padding: 0 15rpx;
 
 }
 
-.card-info{
+.card-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.card-info .title{
+.card-info .title {
   font-size: 32rpx;
   font-weight: bold;
   margin-bottom: 8rpx;
 }
 
-.card-info .desc{
+.card-info .desc {
   font-size: 26rpx;
   opacity: 0.9;
 }
@@ -118,7 +123,7 @@
 .card-icon {
   display: flex;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   width: 60rpx;
   height: 60rpx;
   flex-shrink: 0;
@@ -129,26 +134,30 @@
   width: 100%;
   height: 100%;
 }
+
 /* 各种颜色卡片背景（使用渐变色更美观，可根据需要修改） */
 .card-green {
   background: linear-gradient(135deg, #4caf50, #81c784);
 }
+
 .card-blue {
   background: linear-gradient(135deg, #2196f3, #64b5f6);
 }
+
 .card-orange {
   background: linear-gradient(135deg, #ff9800, #ffb74d);
 }
+
 .card-purple {
   background: linear-gradient(135deg, #9c27b0, #ba68c8);
 }
 
 /* ================== 4. Tab 切换区 ================== */
-.tab-section{
+.tab-section {
   padding: 0 30rpx;
 }
 
-.tar-bar{
+.tab-bar {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -158,7 +167,7 @@
   box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.05);
 }
 
-.tab{
+.tab {
   font-size: 30rpx;
   color: #666;
   position: relative;
@@ -167,12 +176,13 @@
   align-items: center;
 }
 
-.tab .active{
+.tab .active {
   color: #333333;
   font-weight: bold;
 }
+
 /* 给选中的 Tab 加上底部指示条 */
-.tab.active::after{
+.tab.active::after {
   content: "";
   position: absolute;
   bottom: 10rpx;
@@ -182,4 +192,150 @@
   height: 6rpx;
   background-color: #2196f3;
   border-radius: 3rpx;
+}
+
+/* ================== 5. 接单列表区 ================== */
+
+.order-list {
+  padding: 0 30rpx;
+  margin-top: 20rpx;
+}
+
+.order-item {
+  background-color: #fff;
+  border-radius: 20rpx;
+  padding: 30rpx;
+  margin-bottom: 24rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.03);
+}
+
+/* 头部布局 */
+
+.item-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.avatar {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-right: 20rpx;
+  background-color: #eee;
+  /* 头像加载前的占位色 */
+}
+
+.title-price {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+  flex: 1; /* 允许标题自动伸缩 */
+  margin-right: 20rpx;
+  /* 单行溢出省略 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 70%;
+}
+
+.price {
+  font-size: 32rpx;
+  color: #ff3b30;
+  font-weight: bold;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.price-small{
+  font-size: 24rpx;
+  line-height: 36rpx;
+}
+
+/* 标签行 */
+.tags-row {
+  display: flex;
+  align-items: center;
+  gap: 12rpx;
+  margin-bottom: 20rpx;
+  flex-wrap: wrap;
+
+}
+
+.tag {
+  font-size: 22rpx;
+  padding: 4rpx 12rpx;
+  border-radius: 6rpxd;
+}
+
+.tag-blue {
+  color: #4b8bf4;
+}
+
+.tag-purple {
+  color: #9c27b0;
+}
+
+.tag-green {
+  color: #4caf50
+}
+
+/* 描述 */
+.desc {
+  font-size: 28rpx;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 24rpx;
+  /* 多行溢出省略（最多2行） */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+/* 底部信息 */
+
+.item-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20rpx;
+  border-top: 1rpx solid #f0f0f0;
+}
+
+.info-left {
+  display: flex;
+  align-items: center;
+  font-size: 24rpx;
+  color: #999;
+}
+
+.city {
+  margin-right: 16rpx;
+  margin-left: 4rpx;
+}
+
+.time {
+  color: #b0b0b0;
+}
+
+/* 联系按钮 */
+.contact-btn{
+  display: flex;
+  align-items: center;
+  background-color: #eefeff;
+  color:#4b8bf4;
+  font-size: 26rpx;
+  padding: 8rpx 20rpx;
+  border-radius: 8rpx;
+  
 }
